@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=1280" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="theme-color" content="#ffffff" />
 <title>Clement Yorke, Business Development, Marketing, Analytics</title>
 <meta name="description" content="PwC-trained advisory professional delivering data-driven growth, operational efficiency, and strategic partnerships across diverse markets." />
@@ -112,7 +112,6 @@
     content: ''; position: absolute; left: 0; right: 0; bottom: -2px;
     height: 2px; background: var(--ink);
   }
-  /* Nav Contact button — scaled to ~78% of hero "Get in Touch" button */
   .nav-cta {
     font-size: clamp(0.68rem, 0.8vw, 0.72rem);
     letter-spacing: 0.22em;
@@ -140,8 +139,7 @@
 
   /* ---------- Availability status dot ---------- */
   .status-dot {
-    width: 8px;
-    height: 8px;
+    width: 8px; height: 8px;
     background-color: #22c55e;
     border-radius: 50%;
     display: inline-block;
@@ -155,12 +153,10 @@
     100% { opacity: 1;   transform: scale(1); }
   }
 
-  /* ---------- Live project indicator ---------- */
   .live-project { color: #22c55e; display: inline-flex; align-items: center; }
   .live-project::before {
     content: "";
-    width: 6px;
-    height: 6px;
+    width: 6px; height: 6px;
     background: #22c55e;
     border-radius: 50%;
     display: inline-block;
@@ -216,7 +212,7 @@
 
   /* ---------- Hero ---------- */
   .hero {
-    padding-top: clamp(6.5rem, 11vw, 9rem);
+    padding-top: clamp(5rem, 10vw, 9rem);
     padding-bottom: clamp(3rem, 7vw, 5.5rem);
     position: relative;
     overflow: hidden;
@@ -225,16 +221,13 @@
     display: flex;
     align-items: center;
   }
-  @media (min-width: 769px) {
-    .hero { min-height: calc(100vh - 72px - 120px); }
-  }
   .hero-bg-text {
     position: absolute;
     top: 50%; left: 0; right: 0;
     transform: translateY(-50%);
     font-family: 'Playfair Display', serif;
     font-weight: 700;
-    font-size: clamp(8.5rem, 19.5vw, 19.5rem);
+    font-size: clamp(4rem, 19.5vw, 19.5rem);
     color: rgba(10, 10, 10, 0.035);
     white-space: nowrap;
     letter-spacing: -0.04em;
@@ -261,7 +254,6 @@
     color: var(--muted);
     font-weight: 500;
     margin-bottom: 0.5rem;
-    margin-top: 5rem;
     text-align: left;
   }
   .hero-name {
@@ -271,16 +263,11 @@
     line-height: 0.88;
     letter-spacing: -0.045em;
     color: var(--ink);
-    margin: 0rem 0 var(--s-3) 0;
+    margin: 0.5rem 0 var(--s-3) 0;
     padding: 0;
     text-align: left;
   }
-  .hero-name .line {
-    display: block;
-    text-align: left;
-    padding: 0;
-    margin: 0;
-  }
+  .hero-name .line { display: block; text-align: left; padding: 0; margin: 0; }
   .hero-name .line + .line { margin-top: 0; }
 
   .hero-summary {
@@ -371,7 +358,6 @@
 
   /* ---------- Built on Rigour ---------- */
   .rigour { background: var(--dark); color: #fff; padding: clamp(var(--s-5), 10vw, var(--s-8)) 0; }
-  @media (max-width: 768px) { .rigour { padding: 2.5rem 0; } }
   .rigour .eyebrow { color: var(--dark-muted); margin-bottom: var(--s-2); display: block; }
   .rigour-grid { display: grid; grid-template-columns: 1fr; gap: var(--s-4); }
   .rigour h2 {
@@ -408,10 +394,6 @@
     .rigour-grid { grid-template-columns: 0.85fr 1.5fr; gap: var(--s-6); align-items: start; }
   }
 
-  @media (min-width: 769px) {
-    #about, #experience, #education, #skills, #portfolio { min-height: 100vh; }
-    #contact { min-height: 100vh; display: flex; flex-direction: column; justify-content: space-between; }
-  }
   .cream { background: var(--cream); }
   .cream h2.display {
     font-family: 'Playfair Display', serif;
@@ -464,7 +446,6 @@
   }
   .role-meta .sep { margin: 0 0.5rem; color: #c9c2b3; }
 
-  /* Minimal dropdown toggle — pure text chevron */
   .role-toggle {
     display: inline-flex; align-items: center;
     gap: 0.4rem;
@@ -781,8 +762,7 @@
   }
   .live-chip::before {
     content: "";
-    width: 6px;
-    height: 6px;
+    width: 6px; height: 6px;
     background: #22c55e;
     border-radius: 50%;
     display: inline-block;
@@ -790,11 +770,9 @@
     animation: statusPulse 1.8s infinite;
   }
 
-  /* Ensure portfolio screenshots behave like YouTube thumbs */
   .project-card .media a,
   .project-card a.media { display: block; }
 
-  /* Case Study chip variant */
   .live-chip.case-chip {
     color: #fff;
     background: rgba(10,10,10,0.88);
@@ -909,7 +887,6 @@
     border-top: 1px solid rgba(255,255,255,0.1);
     font-weight: 500;
   }
-  /* Disable dark gradient overlay on the poster so content stays readable */
   .poster-media::after { display: none; }
 
   .card-body { padding: var(--s-3); display: flex; flex-direction: column; gap: 0.75rem; }
@@ -958,7 +935,6 @@
     background: var(--dark);
     padding: clamp(var(--s-6), 12vw, 9rem) 0 clamp(var(--s-6), 10vw, 8rem);
   }
-  @media (max-width: 768px) { .contact { padding: 2.5rem 0 2rem; } }
   .contact-box {
     background: transparent;
     color: #fff;
@@ -1041,7 +1017,6 @@
     .contact-actions .btn-primary { flex: 1 1 100%; }
   }
 
-  /* Contact form (EmailJS) — sits flush inside the black contact-box */
   .contact-form {
     display: grid;
     grid-template-columns: 1fr;
@@ -1159,29 +1134,24 @@
   ::selection { background: var(--ink); color: #fff; }
   a:focus-visible, button:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
 
+  /* ---------- Mobile overrides ---------- */
   @media (max-width: 768px) {
-    /* Remove fixed heights so sections flow naturally */
-    #about, #experience, #education, #skills, #portfolio, #contact { min-height: auto !important; }
+    section { padding: 3rem 0; }
+    .hero { padding-top: 5rem; padding-bottom: 2.5rem; }
+    .hero-eyebrow { margin-top: 0; }
+    .metrics { padding: 1.5rem 0; }
+    .rigour { padding: 3rem 0; }
+    .contact { padding: 3rem 0 2rem; }
+    .footer { padding: 1rem 0; }
 
-    /* Tighten all section padding to max 5rem */
-    section { padding: 3rem 0 !important; }
-    .hero { min-height: auto !important; padding-top: 5rem !important; padding-bottom: 2rem !important; }
-    .hero-eyebrow { margin-top: 1rem; }
-    .metrics { padding: 1.5rem 0 !important; }
-    .rigour { padding: 3rem 0 !important; }
-    .contact { padding: 3rem 0 2rem !important; }
-    .footer { padding: 1rem 0 !important; }
-
-    /* Tighten internal spacing */
-    .section-head { margin-bottom: 2rem !important; }
-    .timeline { gap: 2rem !important; }
-    .edu-grid { gap: 2.5rem !important; }
-    .skills-grid { gap: 1.5rem !important; }
-    .portfolio-grid { gap: 1.5rem !important; }
-    .rigour-grid { gap: 2rem !important; }
-    .contact-layout { gap: 2rem !important; }
-    .signature-skills { margin-bottom: 2rem !important; }
-    .hero-name { margin-top: 0.5rem !important; }
+    .section-head { margin-bottom: 2rem; padding-bottom: 1.25rem; }
+    .timeline { gap: 2rem; }
+    .edu-grid { gap: 2.5rem; }
+    .skills-grid { gap: 1.5rem; }
+    .portfolio-grid { gap: 1.5rem; }
+    .rigour-grid { gap: 2rem; }
+    .contact-layout { gap: 2rem; }
+    .signature-skills { margin-bottom: 2rem; }
   }
 </style>
 </head>
@@ -1227,7 +1197,6 @@
           <div class="hero-eyebrow reveal">Operations · Financial Advisory · Business Analytics</div>
           <h1 id="hero-heading" class="hero-name reveal delay-1">
             <span class="line">Clement</span>
-            
             <span class="line">Yorke</span>
           </h1>
           <p class="hero-summary reveal delay-2">
@@ -1290,9 +1259,7 @@
           <p>
             Now advancing expertise in business analytics and AI, while completing my <strong>PMP</strong>, pairing commercial instinct with modern data tools to move the metrics that actually matter.
           </p>
-
           <div class="rigour-divider" aria-hidden="true"></div>
-
           <div class="skill-tags" aria-label="Core competencies">
             <span class="skill-tag">Growth Strategy</span>
             <span class="skill-tag">Financial Analysis</span>
@@ -1315,9 +1282,7 @@
         <span class="eyebrow">Work History</span>
         <h2 id="exp-heading" class="display">Experience</h2>
       </div>
-
       <div class="timeline">
-
         <article class="role reveal">
           <header class="role-head">
             <h3 class="role-title">Secretary <span class="role-type">(Volunteer)</span></h3>
@@ -1405,7 +1370,6 @@
             </div>
           </div>
         </article>
-
       </div>
     </div>
   </section>
@@ -1416,7 +1380,6 @@
         <span class="eyebrow">Academic &amp; Professional</span>
         <h2 id="edu-heading" class="display">Education</h2>
       </div>
-
       <div class="edu-grid">
         <div class="reveal">
           <div class="edu-col-head">
@@ -1444,7 +1407,6 @@
             </div>
           </div>
         </div>
-
         <div class="reveal delay-1">
           <div class="edu-col-head">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
@@ -1492,9 +1454,7 @@
         <span class="skill-pill">Revenue Growth</span>
         <span class="skill-pill">NLP &amp; Sentiment Analysis</span>
       </div>
-
       <div class="skills-grid">
-
         <div class="skills-col-wrap reveal">
           <div class="skill-col skill-featured">
             <h4>Analytics &amp; Insights</h4>
@@ -1518,7 +1478,6 @@
             </ul>
           </div>
         </div>
-
         <div class="skills-col-wrap reveal delay-1">
           <div class="skill-col">
             <h4>Operations &amp; Execution</h4>
@@ -1540,7 +1499,6 @@
             </ul>
           </div>
         </div>
-
         <div class="skill-col reveal delay-2">
           <h4>Technical &amp; Tools</h4>
           <span class="skill-sub">Programming &amp; Libraries</span>
@@ -1559,7 +1517,6 @@
             <li>CRM Tools</li>
           </ul>
         </div>
-
       </div>
     </div>
   </section>
@@ -1570,10 +1527,7 @@
         <span class="eyebrow">Selected Work</span>
         <h2 id="port-heading" class="display">Portfolio</h2>
       </div>
-
       <div class="portfolio-grid">
-
-        <!-- Row 1 -->
         <article class="project-card reveal">
           <a class="media" href="https://the-yew-of-mortality.vercel.app/" target="_blank" rel="noopener" aria-label="Visit The Yew of Mortality, live project">
             <img src="https://api.microlink.io/?url=https%3A%2F%2Fthe-yew-of-mortality.vercel.app%2F&screenshot=true&meta=false&embed=screenshot.url&viewport.width=1280&viewport.height=720" alt="The Yew of Mortality homepage screenshot" loading="lazy" onerror="this.onerror=null;this.src='https://image.thum.io/get/width/1280/crop/720/https://the-yew-of-mortality.vercel.app/';" />
@@ -1601,7 +1555,7 @@
         </article>
 
         <article class="project-card reveal delay-2">
-          <a class="media poster-media" href="https://drive.google.com/file/d/1zFcgvpb9nTSq90ZRhlG0i5kJqhZpMI-Z/view?usp=drive_link" target="_blank" rel="noopener" aria-label="View research poster, Trust, Skepticism, and Policy Concerns Around AI Tools in Higher Education">
+          <a class="media poster-media" href="https://drive.google.com/file/d/1zFcgvpb9nTSq90ZRhlG0i5kJqhZpMI-Z/view?usp=drive_link" target="_blank" rel="noopener" aria-label="View research poster">
             <div class="poster-thumb" aria-hidden="true">
               <div class="poster-header">
                 <div class="poster-ot">
@@ -1633,7 +1587,6 @@
           </div>
         </article>
 
-        <!-- Row 2 -->
         <article class="project-card reveal">
           <div class="media" data-video="5X13XCB3ZSs" role="button" tabindex="0" aria-label="Play: The Broken Contract, Full Length">
             <img src="https://i.ytimg.com/vi/5X13XCB3ZSs/hqdefault.jpg" alt="The Broken Contract, Full Length thumbnail" loading="lazy" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/5X13XCB3ZSs/mqdefault.jpg';" />
@@ -1685,7 +1638,6 @@
           </div>
         </article>
 
-        <!-- Row 3 -->
         <article class="project-card reveal">
           <div class="media" data-video="gWJsIqB4jjc" role="button" tabindex="0" aria-label="Play: The 4 Day Work Week">
             <img src="https://i.ytimg.com/vi/gWJsIqB4jjc/hqdefault.jpg" alt="The 4 Day Work Week thumbnail" loading="lazy" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/gWJsIqB4jjc/mqdefault.jpg';" />
@@ -1705,7 +1657,7 @@
 
         <article class="project-card reveal delay-1">
           <div class="media" data-video="bhEuFMJH1HM" role="button" tabindex="0" aria-label="Play: Research and Insight Presentation, Salvana">
-            <img src="https://i.ytimg.com/vi/bhEuFMJH1HM/hqdefault.jpg" alt="Research and Insight Presentation (Salvana) thumbnail" loading="lazy" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/bhEuFMJH1HM/mqdefault.jpg';" />
+            <img src="https://i.ytimg.com/vi/bhEuFMJH1HM/hqdefault.jpg" alt="Research and Insight Presentation thumbnail" loading="lazy" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/bhEuFMJH1HM/mqdefault.jpg';" />
             <div class="play-btn" aria-hidden="true"></div>
             <span class="yt-chip" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 7.3s-.2-1.6-.9-2.3c-.8-.9-1.7-.9-2.1-1C16.7 3.7 12 3.7 12 3.7s-4.7 0-8 .3c-.4.1-1.3.1-2.1 1C1.2 5.7 1 7.3 1 7.3S.7 9.2.7 11.1v1.8c0 1.9.3 3.8.3 3.8s.2 1.6.9 2.3c.8.9 1.9.9 2.4 1 1.7.2 7.7.3 7.7.3s4.7 0 8-.3c.4-.1 1.3-.1 2.1-1 .7-.7.9-2.3.9-2.3s.3-1.9.3-3.8v-1.8c0-1.9-.3-3.8-.3-3.8zM9.7 14.9V8.4l6 3.3-6 3.2z"/></svg>
@@ -1757,71 +1709,70 @@
             <a class="card-cta" href="https://github.com/cyorke001/cyorke001/blob/main/Ideation-The%20Broken%20Contract.png" target="_blank" rel="noopener">View Board <span class="arrow" aria-hidden="true">↗</span></a>
           </div>
         </article>
-
       </div>
     </div>
   </section>
 
-<section id="contact" class="contact" aria-labelledby="contact-heading">
-  <div class="container">
-    <div class="contact-box reveal">
-      <div class="contact-layout">
-        <div class="contact-lead">
-          <span class="eyebrow reveal">Get in Touch</span>
-          <h2 id="contact-heading" class="reveal delay-1">Open to<br/><em>Opportunities</em></h2>
-          <p class="contact-urgency reveal delay-2">
-            <span class="tag"><span class="status-dot" aria-hidden="true"></span> Available</span>
-            Open to the right opportunity. Any industry, any function, as long as the work is deliberate and the impact is real.
-          </p>
-          <div class="contact-actions reveal delay-2">
-            <button type="button" class="btn btn-primary" id="scrollToForm" aria-label="Let's Work Together, open contact form">
-              Let's Work Together <span class="arrow" aria-hidden="true">→</span>
-            </button>
-            <div class="contact-links-row">
-              <a href="https://www.linkedin.com/in/clement-yorke" target="_blank" rel="noopener" class="contact-link">LinkedIn <span aria-hidden="true">↗</span></a>
-              <a href="https://github.com/cyorke001" target="_blank" rel="noopener" class="contact-link">GitHub <span aria-hidden="true">↗</span></a>
-              <a href="mailto:clementkwesi.yorke@gmail.com" class="contact-link">Email <span aria-hidden="true">↗</span></a>
+  <section id="contact" class="contact" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="contact-box reveal">
+        <div class="contact-layout">
+          <div class="contact-lead">
+            <span class="eyebrow reveal">Get in Touch</span>
+            <h2 id="contact-heading" class="reveal delay-1">Open to<br/><em>Opportunities</em></h2>
+            <p class="contact-urgency reveal delay-2">
+              <span class="tag"><span class="status-dot" aria-hidden="true"></span> Available</span>
+              Open to the right opportunity. Any industry, any function, as long as the work is deliberate and the impact is real.
+            </p>
+            <div class="contact-actions reveal delay-2">
+              <button type="button" class="btn btn-primary" id="scrollToForm" aria-label="Let's Work Together, open contact form">
+                Let's Work Together <span class="arrow" aria-hidden="true">→</span>
+              </button>
+              <div class="contact-links-row">
+                <a href="https://www.linkedin.com/in/clement-yorke" target="_blank" rel="noopener" class="contact-link">LinkedIn <span aria-hidden="true">↗</span></a>
+                <a href="https://github.com/cyorke001" target="_blank" rel="noopener" class="contact-link">GitHub <span aria-hidden="true">↗</span></a>
+                <a href="mailto:clementkwesi.yorke@gmail.com" class="contact-link">Email <span aria-hidden="true">↗</span></a>
+              </div>
             </div>
           </div>
+          <form class="contact-form reveal delay-3" id="contactForm" novalidate>
+            <div class="form-row">
+              <div>
+                <label for="cf-name">Name</label>
+                <input id="cf-name" name="from_name" type="text" placeholder="Your name" required />
+              </div>
+              <div>
+                <label for="cf-email">Email</label>
+                <input id="cf-email" name="reply_to" type="email" placeholder="you@company.com" required />
+              </div>
+            </div>
+            <div>
+              <label for="cf-subject">Subject</label>
+              <input id="cf-subject" name="subject" type="text" placeholder="What's this about?" />
+            </div>
+            <div>
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" placeholder="A few lines on the role, team, or idea." required></textarea>
+            </div>
+            <button type="submit" class="form-submit" id="cfSubmit">
+              Send Message <span class="arrow" aria-hidden="true">→</span>
+            </button>
+            <div class="form-status" id="cfStatus" aria-live="polite"></div>
+          </form>
         </div>
-
-        <form class="contact-form reveal delay-3" id="contactForm" novalidate>
-        <div class="form-row">
-          <div>
-            <label for="cf-name">Name</label>
-            <input id="cf-name" name="from_name" type="text" placeholder="Your name" required />
-          </div>
-          <div>
-            <label for="cf-email">Email</label>
-            <input id="cf-email" name="reply_to" type="email" placeholder="you@company.com" required />
-          </div>
-        </div>
-        <div>
-          <label for="cf-subject">Subject</label>
-          <input id="cf-subject" name="subject" type="text" placeholder="What's this about?" />
-        </div>
-        <div>
-          <label for="cf-message">Message</label>
-          <textarea id="cf-message" name="message" placeholder="A few lines on the role, team, or idea." required></textarea>
-        </div>
-          <button type="submit" class="form-submit" id="cfSubmit">
-            Send Message <span class="arrow" aria-hidden="true">→</span>
-          </button>
-          <div class="form-status" id="cfStatus" aria-live="polite"></div>
-        </form>
       </div>
     </div>
-  </div>
 
-  <footer class="footer" role="contentinfo">
-    <div class="container footer-inner">
-      <span class="footer-left">Clement Yorke © <span id="yr"></span></span>
-      <span class="footer-center">Built on rigour.</span>
-      <span class="footer-right">Based in Oshawa, ON</span>
-    </div>
-  </footer>
+    <footer class="footer" role="contentinfo">
+      <div class="container footer-inner">
+        <span class="footer-left">Clement Yorke © <span id="yr"></span></span>
+        <span class="footer-center">Built on rigour.</span>
+        <span class="footer-right">Based in Oshawa, ON</span>
+      </div>
+    </footer>
+  </section>
 
-</section>
+</main>
 
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script>
@@ -1858,13 +1809,10 @@
   }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
   sections.forEach(s => spy.observe(s));
 
-  // Clear all active nav states when scrolled back to the hero (top of page)
   const heroEl = document.querySelector('.hero');
   const heroObserver = new IntersectionObserver((entries) => {
     entries.forEach(e => {
-      if (e.isIntersecting) {
-        navLinks.forEach(l => l.classList.remove('active'));
-      }
+      if (e.isIntersecting) navLinks.forEach(l => l.classList.remove('active'));
     });
   }, { rootMargin: '0px 0px -20% 0px', threshold: 0.1 });
   if (heroEl) heroObserver.observe(heroEl);
@@ -1877,7 +1825,6 @@
   }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
   reveals.forEach(el => revealer.observe(el));
 
-  // Experience collapsibles
   document.querySelectorAll('[data-role-toggle]').forEach(btn => {
     btn.addEventListener('click', () => {
       const expanded = btn.getAttribute('aria-expanded') === 'true';
@@ -1889,20 +1836,12 @@
     });
   });
 
-  // YouTube lite-embed — swaps thumbnail for an iframe on first interaction
-  // Uses youtube-nocookie.com for broader origin support (incl. file:// previews),
-  // and keeps the card CTA ("Watch Video →") as a hard fallback that always works.
   document.querySelectorAll('.media[data-video]').forEach(el => {
     const load = (e) => {
       if (e) e.preventDefault();
       if (el.classList.contains('loaded')) return;
       const id = el.getAttribute('data-video');
-      const params = new URLSearchParams({
-        autoplay: '1',
-        rel: '0',
-        modestbranding: '1',
-        playsinline: '1'
-      });
+      const params = new URLSearchParams({ autoplay: '1', rel: '0', modestbranding: '1', playsinline: '1' });
       const iframe = document.createElement('iframe');
       iframe.src = 'https://www.youtube-nocookie.com/embed/' + id + '?' + params.toString();
       iframe.setAttribute('frameborder', '0');
@@ -1918,12 +1857,9 @@
       el.removeAttribute('tabindex');
     };
     el.addEventListener('click', load);
-    el.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') load(e);
-    });
+    el.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') load(e); });
   });
 
-  // Intercept nav link clicks — scroll section to fill viewport cleanly below nav
   document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener('click', function(e) {
       const href = this.getAttribute('href');
@@ -1936,6 +1872,7 @@
       window.scrollTo({ top: targetTop, behavior: 'smooth' });
     });
   });
+
   const scrollBtn = document.getElementById('scrollToForm');
   const cfName = document.getElementById('cf-name');
   if (scrollBtn && cfName) {
@@ -1945,8 +1882,6 @@
     });
   }
 
-  // EmailJS contact form submit — no page reload
-  // Replace the three placeholders with your real EmailJS IDs when deploying.
   const EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY';
   const EMAILJS_SERVICE_ID = 'YOUR_SERVICE_ID';
   const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';
@@ -1964,21 +1899,17 @@
       e.preventDefault();
       statusEl.className = 'form-status';
       statusEl.textContent = '';
-
       const name = form['from_name'].value.trim();
       const email = form['reply_to'].value.trim();
       const message = form['message'].value.trim();
-
       if (!name || !email || !message) {
         statusEl.className = 'form-status error';
         statusEl.textContent = 'Please complete the required fields.';
         return;
       }
-
       submitBtn.disabled = true;
       const originalLabel = submitBtn.innerHTML;
       submitBtn.innerHTML = 'Sending…';
-
       const finish = (ok, msg) => {
         submitBtn.disabled = false;
         submitBtn.innerHTML = originalLabel;
@@ -1986,21 +1917,13 @@
         statusEl.textContent = msg;
         if (ok) form.reset();
       };
-
-      const placeholdersSet =
-        EMAILJS_PUBLIC_KEY !== 'YOUR_PUBLIC_KEY' &&
-        EMAILJS_SERVICE_ID !== 'YOUR_SERVICE_ID' &&
-        EMAILJS_TEMPLATE_ID !== 'YOUR_TEMPLATE_ID';
-
+      const placeholdersSet = EMAILJS_PUBLIC_KEY !== 'YOUR_PUBLIC_KEY' && EMAILJS_SERVICE_ID !== 'YOUR_SERVICE_ID' && EMAILJS_TEMPLATE_ID !== 'YOUR_TEMPLATE_ID';
       if (window.emailjs && placeholdersSet) {
         emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form)
           .then(() => finish(true, 'Thank you. Your message has been sent.'))
           .catch(() => finish(false, 'Something went wrong. Please email directly.'));
       } else {
-        // Graceful fallback until EmailJS credentials are configured
-        setTimeout(() => {
-          finish(true, 'Thank you. Your message has been sent.');
-        }, 600);
+        setTimeout(() => finish(true, 'Thank you. Your message has been sent.'), 600);
       }
     });
   }
