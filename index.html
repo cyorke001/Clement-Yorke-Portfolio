@@ -1162,24 +1162,26 @@
   @media (max-width: 768px) {
     /* Remove fixed heights so sections flow naturally */
     #about, #experience, #education, #skills, #portfolio, #contact { min-height: auto !important; }
-    section { padding: clamp(3rem, 6vw, 5rem) 0; }
 
-    /* Hero tighten */
-    .hero { min-height: auto !important; padding-top: 5rem; padding-bottom: 2rem; }
+    /* Tighten all section padding to max 5rem */
+    section { padding: 3rem 0 !important; }
+    .hero { min-height: auto !important; padding-top: 5rem !important; padding-bottom: 2rem !important; }
     .hero-eyebrow { margin-top: 1rem; }
+    .metrics { padding: 1.5rem 0 !important; }
+    .rigour { padding: 3rem 0 !important; }
+    .contact { padding: 3rem 0 2rem !important; }
+    .footer { padding: 1rem 0 !important; }
 
-    /* Metrics strip */
-    .metrics { padding: 1.5rem 0; }
-
-    /* About */
-    .rigour { padding: 3rem 0; }
-
-    /* Remove excessive bottom padding on all sections */
-    .cream { padding: 3rem 0; }
-    .contact { padding: 3rem 0; }
-
-    /* Footer flows tight after contact */
-    .footer { padding: 1rem 0; }
+    /* Tighten internal spacing */
+    .section-head { margin-bottom: 2rem !important; }
+    .timeline { gap: 2rem !important; }
+    .edu-grid { gap: 2.5rem !important; }
+    .skills-grid { gap: 1.5rem !important; }
+    .portfolio-grid { gap: 1.5rem !important; }
+    .rigour-grid { gap: 2rem !important; }
+    .contact-layout { gap: 2rem !important; }
+    .signature-skills { margin-bottom: 2rem !important; }
+    .hero-name { margin-top: 0.5rem !important; }
   }
 </style>
 </head>
