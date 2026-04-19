@@ -1193,12 +1193,13 @@
     .skill-tag { flex: 1 1 calc(50% - 0.2rem); text-align: center; white-space: normal; font-size: 0.7rem; padding: 0.6rem 0.5rem; }
     .skill-tag:last-child:nth-child(odd) { flex: 1 1 100%; }
 
-    /* Experience — title + view details on one line, meta below */
-    .role-head { display: block; }
-    .role-title { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 0.35rem; }
-    .role-toggle { margin-top: 0; float: right; }
-    .role-meta { display: block; font-size: 0.68rem; letter-spacing: 0.08em; color: var(--muted); margin-top: 0; clear: both; }
-    .role-meta .sep { margin: 0 0.25rem; }
+    /* Experience — title row with view details, meta below */
+    .role-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0; }
+    .role-head > .role-title { flex: 1 1 auto; font-size: clamp(1.05rem, 4.5vw, 1.3rem); margin-bottom: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .role-title .role-type { font-size: 0.75em; white-space: nowrap; }
+    .role-toggle { flex-shrink: 0; margin-top: 0; margin-left: 0.75rem; }
+    .role-head > .role-meta { flex: 1 1 100%; font-size: 0.68rem; letter-spacing: 0.08em; margin-top: 0.25rem; }
+    .role-meta .sep { margin: 0 0.2rem; }
 
     /* Signature skills — proper wrapping, no overflow */
     .signature-skills { gap: 0.35rem 0.6rem; padding: 0.85rem 0; margin-bottom: 1.5rem; }
