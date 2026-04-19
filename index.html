@@ -1193,13 +1193,13 @@
     .skill-tag { flex: 1 1 calc(50% - 0.2rem); text-align: center; white-space: normal; font-size: 0.7rem; padding: 0.6rem 0.5rem; }
     .skill-tag:last-child:nth-child(odd) { flex: 1 1 100%; }
 
-    /* Experience — title row with view details, meta below */
-    .role-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0; }
-    .role-head > .role-title { flex: 1 1 auto; font-size: clamp(1.05rem, 4.5vw, 1.3rem); margin-bottom: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-    .role-title .role-type { font-size: 0.75em; white-space: nowrap; }
-    .role-toggle { flex-shrink: 0; margin-top: 0; margin-left: 0.75rem; }
-    .role-head > .role-meta { flex: 1 1 100%; font-size: 0.68rem; letter-spacing: 0.08em; margin-top: 0.25rem; }
+    /* Experience — stacked: title / company / location date */
+    .role-head { display: block; }
+    .role-title { font-size: clamp(1.05rem, 4.5vw, 1.3rem); margin-bottom: 0.2rem; }
+    .role-title .role-type { font-size: 0.75em; }
+    .role-meta { display: block; font-size: 0.68rem; letter-spacing: 0.08em; margin-top: 0; line-height: 1.8; }
     .role-meta .sep { margin: 0 0.2rem; }
+    .role-toggle { margin-top: 0.5rem; }
 
     /* Signature skills — proper wrapping, no overflow */
     .signature-skills { gap: 0.35rem 0.6rem; padding: 0.85rem 0; margin-bottom: 1.5rem; }
@@ -1366,7 +1366,8 @@
           <header class="role-head">
             <h3 class="role-title">Secretary <span class="role-type">(Volunteer)</span></h3>
             <div class="role-meta">
-              Frontdoor Family &amp; Youth Services <span class="sep">·</span> Brampton, ON <span class="sep">·</span> Jan 2025 to Present
+              Frontdoor Family &amp; Youth Services<br>
+              Brampton, ON <span class="sep">·</span> Jan 2025 to Present
             </div>
             <button class="role-toggle" aria-expanded="false" aria-controls="role-body-0" data-role-toggle>
               <span>
@@ -1395,7 +1396,8 @@
           <header class="role-head">
             <h3 class="role-title">Business Development Manager</h3>
             <div class="role-meta">
-              Jobex Company Limited <span class="sep">·</span> Accra, Ghana <span class="sep">·</span> Aug 2021 to Dec 2024
+              Jobex Company Limited<br>
+              Accra, Ghana <span class="sep">·</span> Aug 2021 to Dec 2024
             </div>
             <button class="role-toggle" aria-expanded="false" aria-controls="role-body-1" data-role-toggle>
               <span>
@@ -1423,9 +1425,10 @@
 
         <article class="role reveal">
           <header class="role-head">
-            <h3 class="role-title">Consultant, Advisory</h3>
+            <h3 class="role-title">Associate, Advisory</h3>
             <div class="role-meta">
-              PricewaterhouseCoopers (PwC) <span class="sep">·</span> Accra, Ghana <span class="sep">·</span> Sep 2017 to Jun 2021
+              PricewaterhouseCoopers (PwC)<br>
+              Accra, Ghana <span class="sep">·</span> Sep 2017 to Jun 2021
             </div>
             <button class="role-toggle" aria-expanded="false" aria-controls="role-body-2" data-role-toggle>
               <span>
