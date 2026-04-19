@@ -1201,9 +1201,11 @@
     .role-meta .sep { margin: 0 0.2rem; }
     .role-toggle { margin-top: 0.5rem; }
 
-    /* Signature skills — proper wrapping, no overflow */
-    .signature-skills { gap: 0.35rem 0.6rem; padding: 0.85rem 0; margin-bottom: 1.5rem; }
-    .sig-item { font-size: 0.82rem; }
+    /* Signature skills — smaller, clean wrap */
+    .signature-skills { gap: 0.3rem 0.5rem; padding: 0.85rem 0; margin-bottom: 1.5rem; align-items: baseline; }
+    .signature-skills .sig-label { width: 100%; margin-right: 0; margin-bottom: 0.4rem; }
+    .signature-skills .sig-item { font-size: 0.9rem; }
+    .signature-skills .sig-dot { display: none; }
 
     /* Education — degree title on one line */
     .edu-title { font-size: 0.95rem; }
@@ -1531,15 +1533,13 @@
       </div>
       <div class="signature-skills reveal" style="border-top:1px solid var(--line); margin-top:0;">
         <span class="sig-label">Signature</span>
-        <span class="sig-item">Data Analysis</span>
-        <span class="sig-dot" aria-hidden="true">·</span>
-        <span class="sig-item">Financial Modelling</span>
-        <span class="sig-dot" aria-hidden="true">·</span>
-        <span class="sig-item">KPI Strategy</span>
-        <span class="sig-dot" aria-hidden="true">·</span>
-        <span class="sig-item">Business Intelligence</span>
-        <span class="sig-dot" aria-hidden="true">·</span>
-        <span class="sig-item">Process Optimization</span>
+        <span class="skill-pill">Data Analysis</span>
+        <span class="skill-pill">Financial Modelling</span>
+        <span class="skill-pill">KPI Strategy</span>
+        <span class="skill-pill">Business Intelligence</span>
+        <span class="skill-pill">Process Optimization</span>
+        <span class="skill-pill">Revenue Growth</span>
+        <span class="skill-pill">NLP &amp; Sentiment Analysis</span>
       </div>
 
       <div class="skills-grid">
