@@ -413,6 +413,7 @@
   .rigour-divider { height: 1px; background: #222; margin: var(--s-4) 0 var(--s-3); }
   .sig-tag { color: var(--ink) !important; border-color: var(--line) !important; }
   .sig-tag:hover { background: var(--ink) !important; color: #fff !important; border-color: var(--ink) !important; }
+  .skill-tags { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.5rem; }
   .skill-tag {
     font-size: 0.72rem;
     letter-spacing: 0.08em;
@@ -422,9 +423,12 @@
     border: 1px solid #2d2d2d;
     transition: background 0.25s var(--ease), color 0.25s var(--ease), border-color 0.25s var(--ease), transform 0.25s var(--ease);
     cursor: default;
-    white-space: nowrap;
+    text-align: center;
   }
-  .skill-tag:hover { background: var(--ink); color: #fff; border-color: var(--ink); transform: translateY(-2px); }
+  .skill-tag:hover { background: #fff; color: var(--dark); border-color: #fff; transform: translateY(-2px); }
+  @media (max-width: 768px) {
+    .skill-tags { grid-template-columns: repeat(2, 1fr); gap: 0.4rem; }
+  }
   @media (min-width: 960px) {
     .rigour-grid { grid-template-columns: 0.85fr 1.5fr; gap: var(--s-6); align-items: start; }
   }
@@ -1189,10 +1193,8 @@
     .metric-value { font-size: clamp(1.2rem, 5vw, 1.8rem); }
     .metric-label { font-size: 0.55rem; letter-spacing: 0.12em; }
 
-    /* About section pills — 2 column grid, no orphans */
-    .skill-tags { gap: 0.4rem; }
-    .skill-tag { flex: 1 1 calc(50% - 0.2rem); text-align: center; white-space: normal; font-size: 0.7rem; padding: 0.6rem 0.5rem; }
-    .skill-tag:last-child:nth-child(odd) { flex: 1 1 100%; }
+    /* About section pills — 2 column grid on mobile */
+    .skill-tag { font-size: 0.7rem; padding: 0.6rem 0.5rem; }
 
     /* Experience — stacked: title / company / location date */
     .role-head { display: block; }
