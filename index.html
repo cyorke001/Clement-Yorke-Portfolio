@@ -185,7 +185,7 @@
 
   .mobile-menu {
     position: fixed;
-    top: var(--nav-height);
+    top: 0;
     left: 0; right: 0; bottom: 0;
     background: #fff;
     z-index: 999;
@@ -195,12 +195,37 @@
     flex-direction: column;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
+    padding-top: var(--nav-height);
   }
   .mobile-menu.open { transform: translateX(0); }
   .mobile-menu-inner {
     display: flex; flex-direction: column; height: 100%;
-    padding: 2rem var(--gutter) 2.5rem;
+    padding: 0 var(--gutter) 2.5rem;
   }
+  .mobile-menu-header {
+    display: flex; align-items: center; justify-content: space-between;
+    height: var(--nav-height);
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 1.5rem;
+    flex-shrink: 0;
+  }
+  .mobile-brand {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: clamp(0.9rem, 1.1vw, 1rem);
+    color: var(--ink);
+  }
+  .mobile-close {
+    font-size: 1.25rem;
+    color: var(--ink);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    line-height: 1;
+    transition: opacity 0.2s var(--ease);
+  }
+  .mobile-close:hover { opacity: 0.5; }
   .mobile-nav-links { display: flex; flex-direction: column; gap: 0; flex: 1; }
   .mobile-nav-links a {
     font-family: 'Playfair Display', serif;
@@ -1172,7 +1197,11 @@
 
 <nav class="mobile-menu" id="mobileMenu" aria-hidden="true" aria-label="Mobile navigation">
   <div class="mobile-menu-inner">
-    <div class="mobile-nav-links">
+      <div class="mobile-menu-header">
+        <span class="mobile-brand">Clement Yorke</span>
+        <button class="mobile-close" id="mobileClose" aria-label="Close navigation menu">✕</button>
+      </div>
+      <div class="mobile-nav-links">
       <a href="#about">About <span class="link-arrow">→</span></a>
       <a href="#experience">Experience <span class="link-arrow">→</span></a>
       <a href="#education">Education <span class="link-arrow">→</span></a>
@@ -1782,6 +1811,7 @@
     document.body.style.overflow = open ? 'hidden' : '';
   };
   hamburger.addEventListener('click', () => toggleMenu());
+  document.getElementById('mobileClose').addEventListener('click', () => toggleMenu(false));
   mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => toggleMenu(false)));
 
   const sections = ['about','experience','education','skills','portfolio','contact']
