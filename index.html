@@ -8,7 +8,6 @@
 <meta name="description" content="PwC-trained advisory professional delivering data-driven growth, operational efficiency, and strategic partnerships across diverse markets." />
 <meta name="author" content="Clement Yorke" />
 <meta name="robots" content="index, follow" />
-
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Clement Yorke, Business Development, Marketing, Analytics" />
 <meta property="og:description" content="PwC-trained advisory professional delivering data-driven growth, operational efficiency, and strategic partnerships." />
@@ -18,12 +17,10 @@
 <meta property="og:url" content="https://clement-yorke-portfolio.vercel.app" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://image.thum.io/get/width/1280/crop/720/viewportWidth/1280/https://clement-yorke-portfolio.vercel.app" />
-
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="preconnect" href="https://i.ytimg.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; scroll-padding-top: 80px; }
@@ -41,7 +38,6 @@
   a { color: inherit; text-decoration: none; }
   button { font: inherit; cursor: pointer; border: none; background: none; color: inherit; }
   ul { list-style: none; }
-
   :root {
     --bg: #ffffff;
     --cream: #f5f1e8;
@@ -52,10 +48,8 @@
     --line-white: #e8e8e8;
     --dark: #050505;
     --dark-muted: #9a9a9a;
-
     --maxw: 1240px;
     --gutter: clamp(1.25rem, 4vw, 3rem);
-
     --s-1: 0.5rem;
     --s-2: 1rem;
     --s-3: 1.5rem;
@@ -64,14 +58,11 @@
     --s-6: 4rem;
     --s-7: 5rem;
     --s-8: 7.5rem;
-
     --section-y: clamp(var(--s-5), 9vw, var(--s-8));
     --ease: cubic-bezier(0.22, 1, 0.36, 1);
   }
-
   h1, h2, h3, h4 { font-family: 'Playfair Display', Georgia, serif; font-weight: 500; letter-spacing: -0.015em; line-height: 1.02; color: var(--ink); }
   p { color: #2a2a2a; }
-
   .eyebrow {
     font-family: 'Inter', sans-serif;
     font-size: clamp(0.68rem, 0.9vw, 0.72rem);
@@ -80,10 +71,8 @@
     font-weight: 500;
     color: var(--muted);
   }
-
   .container { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 var(--gutter); }
   section { padding: var(--section-y) 0; position: relative; }
-
   /* ---------- Navigation ---------- */
   .nav {
     position: fixed; top: 0; left: 0; right: 0; z-index: 100;
@@ -118,7 +107,6 @@
     content: ''; position: absolute; left: 0; right: 0; bottom: -2px;
     height: 2px; background: var(--ink);
   }
-  /* Nav Contact button — scaled to ~78% of hero "Get in Touch" button */
   .nav-cta {
     font-size: clamp(0.68rem, 0.8vw, 0.72rem);
     letter-spacing: 0.22em;
@@ -141,8 +129,6 @@
     transform: translateY(-1px);
   }
   .nav-cta::after { display: none !important; }
-
-  /* ---------- Availability status dot ---------- */
   .status-dot {
     width: 8px;
     height: 8px;
@@ -158,8 +144,6 @@
     50%  { opacity: 0.5; transform: scale(1.2); }
     100% { opacity: 1;   transform: scale(1); }
   }
-
-  /* ---------- Live project indicator ---------- */
   .live-project { color: #22c55e; display: inline-flex; align-items: center; }
   .live-project::before {
     content: "";
@@ -170,7 +154,6 @@
     display: inline-block;
     margin-right: 6px;
   }
-
   .hamburger {
     width: 40px; height: 40px; display: flex; flex-direction: column;
     justify-content: center; align-items: center; gap: 5px; background: transparent;
@@ -183,7 +166,6 @@
   .hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
   .hamburger.open span:nth-child(2) { opacity: 0; }
   .hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
-
   .mobile-menu {
     position: fixed;
     top: 0;
@@ -267,7 +249,6 @@
     .hamburger { display: none; }
     .mobile-menu { display: none !important; }
   }
-
   /* ---------- Hero ---------- */
   .hero {
     padding-top: clamp(6.5rem, 11vw, 9rem);
@@ -278,7 +259,6 @@
     background: var(--cream);
   }
   .hero .container { position: relative; z-index: 2; }
-
   .hero-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -337,7 +317,6 @@
   .btn-primary:hover { background: #fff; color: var(--ink); }
   .btn-ghost { background: transparent; color: var(--ink); }
   .btn-ghost:hover { background: var(--ink); color: #fff; }
-
   .hero-quicklinks {
     display: flex; flex-wrap: wrap; gap: 1rem 1.5rem;
     font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase;
@@ -349,11 +328,9 @@
   }
   .hero-quicklinks a:hover { color: var(--ink); }
   .hero-quicklinks svg { width: 14px; height: 14px; }
-
   @media (max-width: 640px) {
     .hero-ctas .btn { flex: 1 1 100%; }
   }
-
   @media (min-width: 900px) {
     .hero-grid {
       grid-template-columns: 1.5fr 1fr;
@@ -363,7 +340,6 @@
     .hero-cta-block { align-items: flex-start; text-align: left; }
     .hero-ctas { width: auto; justify-content: flex-start; }
   }
-
   /* ---------- Metrics Strip ---------- */
   .metrics {
     padding: clamp(2rem, 4.5vw, 3rem) 0;
@@ -389,7 +365,6 @@
     font-weight: 500;
   }
   @media (min-width: 768px) { .metrics-grid { grid-template-columns: repeat(4, 1fr); gap: var(--s-4); } }
-
   /* ---------- Built on Rigour ---------- */
   .rigour { background: var(--dark); color: #fff; padding: clamp(var(--s-5), 10vw, var(--s-8)) 0; }
   .rigour .eyebrow { color: var(--dark-muted); margin-bottom: var(--s-2); display: block; }
@@ -432,7 +407,6 @@
   @media (min-width: 960px) {
     .rigour-grid { grid-template-columns: 0.85fr 1.5fr; gap: var(--s-6); align-items: start; }
   }
-
   /* ---------- Section head ---------- */
   .cream { background: var(--cream); }
   .cream h2.display {
@@ -449,7 +423,6 @@
     border-bottom: 1px solid var(--line);
   }
   .section-head .eyebrow { display: block; margin-bottom: 0.75rem; }
-
   /* ---------- Experience (collapsible) ---------- */
   .timeline { display: flex; flex-direction: column; gap: clamp(2.5rem, 5vw, 3.5rem); }
   .role {
@@ -485,8 +458,6 @@
     line-height: 1.5;
   }
   .role-meta .sep { margin: 0 0.5rem; color: #c9c2b3; }
-
-  /* Minimal dropdown toggle — pure text chevron */
   .role-toggle {
     display: inline-flex; align-items: center;
     gap: 0.4rem;
@@ -516,7 +487,6 @@
   }
   .toggle-arrow svg { width: 11px; height: 11px; }
   .role-toggle[aria-expanded="true"] .toggle-arrow { transform: rotate(180deg); }
-
   .role-body {
     display: grid;
     grid-template-rows: 0fr;
@@ -550,7 +520,6 @@
     width: 7px; height: 1px; background: var(--ink);
   }
   .role-body li strong { color: var(--ink); font-weight: 600; }
-
   /* ---------- Education ---------- */
   .edu-grid { display: grid; grid-template-columns: 1fr; gap: var(--s-5); }
   .edu-col-head {
@@ -565,7 +534,6 @@
     border-bottom: 1px solid var(--line);
   }
   .edu-col-head svg { width: 18px; height: 18px; color: var(--ink); }
-
   .edu-timeline { position: relative; padding-left: 1.5rem; }
   .edu-timeline::before {
     content: ''; position: absolute;
@@ -599,7 +567,6 @@
   .edu-school { font-size: 0.88rem; color: var(--muted); letter-spacing: 0.04em; }
   .edu-school .school { color: var(--ink-soft); }
   .edu-faculty { display: block; font-size: 0.78rem; color: var(--muted); margin-top: 0.2rem; letter-spacing: 0.04em; }
-
   .cert-list { display: flex; flex-direction: column; gap: var(--s-3); }
   .cert { display: flex; flex-direction: column; gap: 0.25rem; }
   .cert-title {
@@ -610,11 +577,9 @@
   }
   .cert-issuer { font-size: 0.85rem; color: var(--muted); }
   .cert-issuer .progress { color: #8a8a8a; font-style: italic; }
-
   @media (min-width: 820px) {
     .edu-grid { grid-template-columns: 1.3fr 1fr; gap: var(--s-7); }
   }
-
   /* ---------- Skills ---------- */
   .signature-skills {
     display: flex;
@@ -646,7 +611,6 @@
     color: #c9c2b3;
     margin: 0 0.1rem;
   }
-
   .skills-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -696,7 +660,6 @@
   }
   .skill-col li:hover { color: var(--ink); }
   .skill-col li:hover::before { color: var(--ink); }
-
   @media (min-width: 720px) {
     .skills-grid { grid-template-columns: repeat(2, 1fr); }
   }
@@ -704,7 +667,6 @@
     .skills-grid { grid-template-columns: repeat(3, 1fr); row-gap: 0; }
     .skills-grid .skill-col:nth-child(n+4) { margin-top: -5rem; }
   }
-
   /* ---------- Portfolio ---------- */
   .portfolio-grid {
     display: grid;
@@ -775,7 +737,6 @@
   }
   .project-card:hover .play-btn { transform: translate(-50%, -50%) scale(1.06); background: rgba(0,0,0,1); }
   .media.loaded .play-btn { display: none; }
-
   .yt-chip {
     position: absolute;
     bottom: 0.85rem; right: 0.85rem;
@@ -788,7 +749,6 @@
   }
   .yt-chip svg { width: 14px; height: 14px; }
   .media.loaded .yt-chip { display: none; }
-
   .live-chip {
     position: absolute;
     top: 0.85rem; left: 0.85rem;
@@ -812,19 +772,14 @@
     margin-right: 6px;
     animation: statusPulse 1.8s infinite;
   }
-
-  /* Ensure portfolio screenshots behave like YouTube thumbs */
   .project-card .media a,
   .project-card a.media { display: block; }
-
-  /* Case Study chip variant */
   .live-chip.case-chip {
     color: #fff;
     background: rgba(10,10,10,0.88);
     font-weight: 500;
   }
   .live-chip.case-chip::before { display: none; }
-
   /* ---------- Research Poster thumbnail ---------- */
   .poster-media { background: #0e2a55; cursor: pointer; }
   .poster-thumb {
@@ -932,9 +887,7 @@
     border-top: 1px solid rgba(255,255,255,0.1);
     font-weight: 500;
   }
-  /* Disable dark gradient overlay on the poster so content stays readable */
   .poster-media::after { display: none; }
-
   .card-body { padding: var(--s-3); display: flex; flex-direction: column; gap: 0.75rem; }
   .card-tag {
     font-size: 0.68rem;
@@ -968,14 +921,12 @@
   }
   .card-cta .arrow { transition: transform 0.3s var(--ease); }
   .project-card:hover .card-cta .arrow { transform: translateX(5px); }
-
   @media (min-width: 720px) {
     .portfolio-grid { grid-template-columns: repeat(2, 1fr); gap: var(--s-3); }
   }
   @media (min-width: 1100px) {
     .portfolio-grid { grid-template-columns: repeat(3, 1fr); }
   }
-
   /* ---------- Contact ---------- */
   .contact {
     background: var(--dark);
@@ -1032,8 +983,6 @@
     vertical-align: middle;
     font-weight: 500;
   }
-
-  /* Contact actions row: [Let's Work Together] [LinkedIn] [GitHub] [Email] */
   .contact-actions {
     display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem 1.15rem;
     margin-bottom: 0;
@@ -1060,8 +1009,6 @@
     .contact-actions { gap: 0.5rem 1rem; }
     .contact-actions .btn-primary { flex: 1 1 100%; }
   }
-
-  /* Contact form (EmailJS) — sits flush inside the black contact-box */
   .contact-form {
     display: grid;
     grid-template-columns: 1fr;
@@ -1130,7 +1077,6 @@
   }
   .form-status.success { color: #22c55e; }
   .form-status.error { color: #f87171; }
-
   .footer {
     background: var(--dark); color: #fff;
     padding: var(--s-3) 0 var(--s-3);
@@ -1157,7 +1103,6 @@
   @media (min-width: 768px) {
     .footer-inner { flex-direction: row; }
   }
-
   /* ---------- Scroll reveal ---------- */
   .reveal {
     opacity: 0; transform: translateY(24px);
@@ -1169,59 +1114,39 @@
   .reveal.delay-2 { transition-delay: 0.16s; }
   .reveal.delay-3 { transition-delay: 0.24s; }
   .reveal.delay-4 { transition-delay: 0.32s; }
-
   @media (prefers-reduced-motion: reduce) {
     * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
     .reveal { opacity: 1; transform: none; }
     .role-body { opacity: 1; grid-template-rows: 1fr; }
   }
-
   ::selection { background: var(--ink); color: #fff; }
   a:focus-visible, button:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
-
   @media (max-width: 768px) {
-
-    /* Remove white space at bottom of last section */
     #contact { padding-bottom: 0; }
     .contact { padding-bottom: 0; }
-
-    /* Eyebrow — force single line, smaller */
     .hero-eyebrow { font-size: 0.58rem; letter-spacing: 0.18em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-
-    /* Metrics strip — 4 columns on mobile so all fit on one row */
     .metrics-grid { grid-template-columns: repeat(4, 1fr); gap: 0.5rem; }
     .metric-value { font-size: clamp(1.2rem, 5vw, 1.8rem); }
     .metric-label { font-size: 0.55rem; letter-spacing: 0.12em; }
-
-    /* About section pills — 2 column grid on mobile */
     .skill-tag { font-size: 0.68rem; padding: 0.55rem 0.4rem; white-space: normal; text-align: center; }
     .skill-tags { gap: 0.35rem; }
-
-    /* Experience — tighten gap between roles */
     .timeline { gap: 1.25rem; }
     .role { padding-bottom: 1.25rem; }
-
-    /* Experience — stacked: title / company / location date */
     .role-head { display: block; }
     .role-title { font-size: clamp(1.05rem, 4.5vw, 1.3rem); margin-bottom: 0.2rem; }
     .role-title .role-type { font-size: 0.75em; }
     .role-meta { display: block; font-size: 0.68rem; letter-spacing: 0.08em; margin-top: 0; line-height: 1.8; }
     .role-meta .sep { margin: 0 0.2rem; }
     .role-toggle { margin-top: 0.5rem; }
-
-    /* Signature skills — same 2-column grid as about section */
     .signature-skills { gap: 0.4rem; padding: 0.85rem 0; margin-bottom: 1.5rem; }
     .signature-skills .sig-label { width: 100%; margin-bottom: 0.25rem; }
     .sig-tag { flex: 1 1 calc(50% - 0.2rem); text-align: center; white-space: normal; font-size: 0.7rem; padding: 0.6rem 0.5rem; }
     .sig-tag:last-child:nth-child(odd) { flex: 1 1 100%; }
-
-    /* Education — degree title on one line */
     .edu-title { font-size: 0.95rem; }
   }
 </style>
 </head>
 <body>
-
 <header class="nav" id="nav" role="banner">
   <div class="container nav-inner">
     <a href="#top" class="brand" aria-label="Clement Yorke, Home">Clement Yorke</a>
@@ -1237,24 +1162,22 @@
       <span></span><span></span><span></span>
     </button>
   </div>
-    </div>
 </header>
-
 <nav class="mobile-menu" id="mobileMenu" aria-hidden="true" aria-label="Mobile navigation">
   <div class="mobile-menu-inner">
       <div class="mobile-menu-header">
         <span class="mobile-brand">Clement Yorke</span>
-        <button class="mobile-close" id="mobileClose" aria-label="Close navigation menu">✕</button>
+        <button class="mobile-close" id="mobileClose" aria-label="Close navigation menu">&#x2715;</button>
       </div>
       <div class="mobile-nav-links">
-      <a href="#about">About <span class="link-arrow">→</span></a>
-      <a href="#experience">Experience <span class="link-arrow">→</span></a>
-      <a href="#education">Education <span class="link-arrow">→</span></a>
-      <a href="#skills">Skills <span class="link-arrow">→</span></a>
-      <a href="#portfolio">Portfolio <span class="link-arrow">→</span></a>
+      <a href="#about">About <span class="link-arrow">&#x2192;</span></a>
+      <a href="#experience">Experience <span class="link-arrow">&#x2192;</span></a>
+      <a href="#education">Education <span class="link-arrow">&#x2192;</span></a>
+      <a href="#skills">Skills <span class="link-arrow">&#x2192;</span></a>
+      <a href="#portfolio">Portfolio <span class="link-arrow">&#x2192;</span></a>
     </div>
     <div class="mobile-cta">
-      <a href="#contact">Get in Touch →</a>
+      <a href="#contact">Get in Touch &#x2192;</a>
     </div>
     <div class="mobile-meta">
       <a href="mailto:clementkwesi.yorke@gmail.com" aria-label="Email">
@@ -1272,9 +1195,7 @@
     </div>
   </div>
 </nav>
-
 <main id="top">
-
   <section class="hero" aria-labelledby="hero-heading">
     <div class="container">
       <div class="hero-grid">
@@ -1291,10 +1212,10 @@
         <div class="hero-cta-block reveal delay-3">
           <div class="hero-ctas">
             <a href="#contact" class="btn btn-primary">
-              Get in Touch <span class="arrow" aria-hidden="true">→</span>
+              Get in Touch <span class="arrow" aria-hidden="true">&#x2192;</span>
             </a>
             <a href="#experience" class="btn btn-ghost">
-              View Experience <span class="arrow" aria-hidden="true">↓</span>
+              View Experience <span class="arrow" aria-hidden="true">&#x2193;</span>
             </a>
           </div>
           <div class="hero-quicklinks" aria-label="Contact channels">
@@ -1315,7 +1236,6 @@
       </div>
     </div>
   </section>
-
   <section class="metrics" aria-label="Credentials at a glance">
     <div class="container">
       <div class="metrics-grid">
@@ -1326,7 +1246,6 @@
       </div>
     </div>
   </section>
-
   <section id="about" class="rigour" aria-labelledby="rigour-heading">
     <div class="container">
       <div class="rigour-grid">
@@ -1344,9 +1263,7 @@
           <p>
             Now advancing expertise in business analytics and AI, while completing my <strong>PMP</strong>, pairing commercial instinct with modern data tools to move the metrics that actually matter.
           </p>
-
           <div class="rigour-divider" aria-hidden="true"></div>
-
           <div class="skill-tags" aria-label="Core competencies">
             <span class="skill-tag">Growth Strategy</span>
             <span class="skill-tag">Financial Analysis</span>
@@ -1362,16 +1279,13 @@
       </div>
     </div>
   </section>
-
   <section id="experience" class="cream" aria-labelledby="exp-heading">
     <div class="container">
       <div class="section-head reveal">
         <span class="eyebrow">Work History</span>
         <h2 id="exp-heading" class="display">Experience</h2>
       </div>
-
       <div class="timeline">
-
         <article class="role reveal">
           <header class="role-head">
             <h3 class="role-title">Secretary <span class="role-type">(Volunteer)</span></h3>
@@ -1401,7 +1315,6 @@
             </div>
           </div>
         </article>
-
         <article class="role reveal">
           <header class="role-head">
             <h3 class="role-title">Business Development Manager</h3>
@@ -1432,7 +1345,6 @@
             </div>
           </div>
         </article>
-
         <article class="role reveal">
           <header class="role-head">
             <h3 class="role-title">Associate, Advisory</h3>
@@ -1462,18 +1374,15 @@
             </div>
           </div>
         </article>
-
       </div>
     </div>
   </section>
-
   <section id="education" class="cream" aria-labelledby="edu-heading">
     <div class="container">
       <div class="section-head reveal">
         <span class="eyebrow">Academic &amp; Professional</span>
         <h2 id="edu-heading" class="display">Education</h2>
       </div>
-
       <div class="edu-grid">
         <div class="reveal">
           <div class="edu-col-head">
@@ -1501,7 +1410,6 @@
             </div>
           </div>
         </div>
-
         <div class="reveal delay-1">
           <div class="edu-col-head">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
@@ -1532,7 +1440,6 @@
       </div>
     </div>
   </section>
-
   <section id="skills" class="cream" aria-labelledby="skills-heading">
     <div class="container">
       <div class="section-head reveal" style="margin-bottom:0; border-bottom:0; padding-bottom:0;">
@@ -1549,7 +1456,6 @@
         <span class="skill-tag sig-tag">Revenue Growth</span>
         <span class="skill-tag sig-tag">NLP &amp; Sentiment Analysis</span>
       </div>
-
       <div class="skills-grid">
         <div class="skill-col skill-featured reveal">
           <h4>Analytics &amp; Insights</h4>
@@ -1562,7 +1468,6 @@
             <li>A/B Testing</li>
           </ul>
         </div>
-
         <div class="skill-col reveal delay-1">
           <h4>Strategic &amp; Commercial</h4>
           <ul>
@@ -1573,7 +1478,6 @@
             <li>Competitive Analysis</li>
           </ul>
         </div>
-
         <div class="skill-col reveal delay-2">
           <h4>Technical &amp; Tools</h4>
           <span class="skill-sub">Programming &amp; Libraries</span>
@@ -1592,7 +1496,6 @@
             <li>CRM Tools</li>
           </ul>
         </div>
-
         <div class="skill-col reveal delay-3">
           <h4>Operations &amp; Execution</h4>
           <ul>
@@ -1603,7 +1506,6 @@
             <li>Project Planning</li>
           </ul>
         </div>
-
         <div class="skill-col reveal delay-4">
           <h4>AI &amp; Applied Intelligence</h4>
           <ul>
@@ -1616,16 +1518,13 @@
       </div>
     </div>
   </section>
-
   <section id="portfolio" class="cream" aria-labelledby="port-heading">
     <div class="container">
       <div class="section-head reveal">
         <span class="eyebrow">Selected Work</span>
         <h2 id="port-heading" class="display">Portfolio</h2>
       </div>
-
       <div class="portfolio-grid">
-
         <!-- Row 1 -->
         <article class="project-card reveal">
           <a class="media" href="https://the-yew-of-mortality.vercel.app/" target="_blank" rel="noopener" aria-label="Visit The Yew of Mortality, live project">
@@ -1636,10 +1535,9 @@
             <span class="card-tag">Narrative, Interactive Web</span>
             <h3 class="card-title">The Yew of Mortality</h3>
             <p class="card-desc">Interactive narrative web experience combining long-form writing with an atmospheric, scroll-led visual treatment.</p>
-            <a class="card-cta" href="https://the-yew-of-mortality.vercel.app/" target="_blank" rel="noopener"><span class="live-project">Live</span> · Visit Live Site <span class="arrow" aria-hidden="true">↗</span></a>
+            <a class="card-cta" href="https://the-yew-of-mortality.vercel.app/" target="_blank" rel="noopener"><span class="live-project">Live</span> · Visit Live Site <span class="arrow" aria-hidden="true">&#x2197;</span></a>
           </div>
         </article>
-
         <article class="project-card reveal delay-1">
           <a class="media" href="https://equifund.lovable.app" target="_blank" rel="noopener" aria-label="Visit Equifund, live project">
             <img src="https://api.microlink.io/?url=https%3A%2F%2Fequifund.lovable.app&screenshot=true&meta=false&embed=screenshot.url&viewport.width=1280&viewport.height=720" alt="Equifund homepage screenshot" loading="lazy" onerror="this.onerror=null;this.src='https://image.thum.io/get/width/1280/crop/720/https://equifund.lovable.app';" />
@@ -1649,10 +1547,9 @@
             <span class="card-tag">Product, FinTech Concept</span>
             <h3 class="card-title">Equifund, Access to Capital</h3>
             <p class="card-desc">Live product prototype exploring a more equitable path to capital for underserved founders. Deployed, interactive, and open to feedback.</p>
-            <a class="card-cta" href="https://equifund.lovable.app" target="_blank" rel="noopener"><span class="live-project">Live</span> · Visit Live Site <span class="arrow" aria-hidden="true">↗</span></a>
+            <a class="card-cta" href="https://equifund.lovable.app" target="_blank" rel="noopener"><span class="live-project">Live</span> · Visit Live Site <span class="arrow" aria-hidden="true">&#x2197;</span></a>
           </div>
         </article>
-
         <article class="project-card reveal delay-2">
           <a class="media poster-media" href="https://github.com/cyorke001/cyorke001/blob/main/Trust%2C%20Skepticism%2C%20and%20Policy%20Concerns%20Around%20AI%20Tools%20in%20Higher%20Education%20%20Poster.png" target="_blank" rel="noopener" aria-label="View research poster, Trust, Skepticism, and Policy Concerns Around AI Tools in Higher Education">
             <div class="poster-thumb" aria-hidden="true">
@@ -1682,10 +1579,9 @@
             <span class="card-tag">Research Poster, NLP &amp; LLMs</span>
             <h3 class="card-title">Trust, Skepticism &amp; Policy Concerns Around AI in Higher Education</h3>
             <p class="card-desc">Cross-platform NLP study of 29,462 Reddit, YouTube, and Twitter posts comparing trust, skepticism, and policy concerns about AI in higher education.</p>
-            <a class="card-cta" href="https://github.com/cyorke001/cyorke001/blob/main/Trust%2C%20Skepticism%2C%20and%20Policy%20Concerns%20Around%20AI%20Tools%20in%20Higher%20Education%20%20Poster.png" target="_blank" rel="noopener">View Research <span class="arrow" aria-hidden="true">↗</span></a>
+            <a class="card-cta" href="https://github.com/cyorke001/cyorke001/blob/main/Trust%2C%20Skepticism%2C%20and%20Policy%20Concerns%20Around%20AI%20Tools%20in%20Higher%20Education%20%20Poster.png" target="_blank" rel="noopener">View Research <span class="arrow" aria-hidden="true">&#x2197;</span></a>
           </div>
         </article>
-
         <!-- Row 2 -->
         <article class="project-card reveal">
           <div class="media" data-video="eTRifUg7qgA" role="button" tabindex="0" aria-label="Play: The Broken Contract, Presentation">
@@ -1700,10 +1596,9 @@
             <span class="card-tag">Policy, Urban Planning</span>
             <h3 class="card-title">The Broken Contract, Presentation</h3>
             <p class="card-desc">A policy and urban planning analysis of housing affordability across the Greater Toronto Area from 1950 to 2025.</p>
-            <a class="card-cta" href="https://youtu.be/eTRifUg7qgA" target="_blank" rel="noopener">Watch Video <span class="arrow" aria-hidden="true">→</span></a>
+            <a class="card-cta" href="https://youtu.be/eTRifUg7qgA" target="_blank" rel="noopener">Watch Video <span class="arrow" aria-hidden="true">&#x2192;</span></a>
           </div>
         </article>
-
         <article class="project-card reveal delay-1">
           <div class="media" data-video="4sc3W9UmgKI" role="button" tabindex="0" aria-label="Play: Priced Out Before We Start">
             <img src="https://i.ytimg.com/vi/4sc3W9UmgKI/hqdefault.jpg" alt="Priced Out Before We Start thumbnail" loading="lazy" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/4sc3W9UmgKI/mqdefault.jpg';" />
@@ -1717,10 +1612,9 @@
             <span class="card-tag">Cost of Living, Analysis</span>
             <h3 class="card-title">Priced Out Before We Start</h3>
             <p class="card-desc">Household-budget breakdown mapping how core expenses compound against stagnant wages, and what actually moves the needle.</p>
-            <a class="card-cta" href="https://youtu.be/4sc3W9UmgKI" target="_blank" rel="noopener">Watch Video <span class="arrow" aria-hidden="true">→</span></a>
+            <a class="card-cta" href="https://youtu.be/4sc3W9UmgKI" target="_blank" rel="noopener">Watch Video <span class="arrow" aria-hidden="true">&#x2192;</span></a>
           </div>
         </article>
-
         <article class="project-card reveal delay-2">
           <div class="media" data-video="gWJsIqB4jjc" role="button" tabindex="0" aria-label="Play: The 4 Day Work Week">
             <img src="https://i.ytimg.com/vi/gWJsIqB4jjc/hqdefault.jpg" alt="The 4 Day Work Week thumbnail" loading="lazy" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/gWJsIqB4jjc/mqdefault.jpg';" />
@@ -1734,10 +1628,9 @@
             <span class="card-tag">Animated, Workforce Policy</span>
             <h3 class="card-title">The 4 Day Work Week</h3>
             <p class="card-desc">Animated presentation examining what the five day default is actually costing employers, workers, and the wider economy.</p>
-            <a class="card-cta" href="https://youtu.be/gWJsIqB4jjc" target="_blank" rel="noopener">Watch Video <span class="arrow" aria-hidden="true">→</span></a>
+            <a class="card-cta" href="https://youtu.be/gWJsIqB4jjc" target="_blank" rel="noopener">Watch Video <span class="arrow" aria-hidden="true">&#x2192;</span></a>
           </div>
         </article>
-
         <!-- Row 3 -->
         <article class="project-card reveal">
           <div class="media" data-video="5X13XCB3ZSs" role="button" tabindex="0" aria-label="Play: The Broken Contract, Full Length">
@@ -1752,10 +1645,9 @@
             <span class="card-tag">Long-Form Study</span>
             <h3 class="card-title">The Broken Contract, Full Length</h3>
             <p class="card-desc">Extended companion to the Broken Contract series, with deeper policy context and longitudinal data on the GTA housing contract.</p>
-            <a class="card-cta" href="https://youtu.be/5X13XCB3ZSs" target="_blank" rel="noopener">Watch Video <span class="arrow" aria-hidden="true">→</span></a>
+            <a class="card-cta" href="https://youtu.be/5X13XCB3ZSs" target="_blank" rel="noopener">Watch Video <span class="arrow" aria-hidden="true">&#x2192;</span></a>
           </div>
         </article>
-
         <article class="project-card reveal delay-1">
           <div class="media" data-video="bhEuFMJH1HM" role="button" tabindex="0" aria-label="Play: Research and Insight Presentation, Salvana">
             <img src="https://i.ytimg.com/vi/bhEuFMJH1HM/hqdefault.jpg" alt="Research and Insight Presentation (Salvana) thumbnail" loading="lazy" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/bhEuFMJH1HM/mqdefault.jpg';" />
@@ -1769,10 +1661,9 @@
             <span class="card-tag">Presentation, Research</span>
             <h3 class="card-title">Research &amp; Insight Presentation (Salvana)</h3>
             <p class="card-desc">Visual case study distilling research findings into a concise, audience-ready narrative for stakeholders and decision-makers.</p>
-            <a class="card-cta" href="https://youtu.be/bhEuFMJH1HM" target="_blank" rel="noopener">Watch Video <span class="arrow" aria-hidden="true">→</span></a>
+            <a class="card-cta" href="https://youtu.be/bhEuFMJH1HM" target="_blank" rel="noopener">Watch Video <span class="arrow" aria-hidden="true">&#x2192;</span></a>
           </div>
         </article>
-
         <article class="project-card reveal delay-2">
           <div class="media" data-video="DepykPEsIxc" role="button" tabindex="0" aria-label="Play: Eataly Social Media Ad Concept">
             <img src="https://i.ytimg.com/vi/DepykPEsIxc/hqdefault.jpg" alt="Eataly Social Media Ad Concept thumbnail" loading="lazy" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/DepykPEsIxc/mqdefault.jpg';" />
@@ -1786,37 +1677,33 @@
             <span class="card-tag">Social Media, Brand Concept</span>
             <h3 class="card-title">Eataly — Social Media Ad Concept</h3>
             <p class="card-desc">A concept social media ad for Eataly restaurant, blending brand storytelling with visual-first content strategy.</p>
-            <a class="card-cta" href="https://youtube.com/shorts/DepykPEsIxc" target="_blank" rel="noopener">Watch Video <span class="arrow" aria-hidden="true">→</span></a>
+            <a class="card-cta" href="https://youtube.com/shorts/DepykPEsIxc" target="_blank" rel="noopener">Watch Video <span class="arrow" aria-hidden="true">&#x2192;</span></a>
           </div>
         </article>
-
         <article class="project-card reveal">
           <div class="card-body" style="padding-top:1.5rem;">
             <span class="card-tag">Data Analysis, Python</span>
             <h3 class="card-title">Canada CPI Growth Analysis (2017–2022)</h3>
             <p class="card-desc">Between 2017 and 2022, food prices in Canada rose faster than any other consumer spending category — outpacing shelter, transportation, and the all-items average. This analysis uses Statistics Canada's CPI dataset to quantify growth across nine categories and explain the compounding drivers: COVID-19 disruption, fertilizer cost spikes, climate shocks, and post-lockdown demand rebound.</p>
-            <a class="card-cta" href="https://github.com/cyorke001/cyorke001/blob/main/CPI_Assignment_Clement_Yorke.ipynb" target="_blank" rel="noopener">View Notebook <span class="arrow" aria-hidden="true">↗</span></a>
+            <a class="card-cta" href="https://github.com/cyorke001/cyorke001/blob/main/CPI_Assignment_Clement_Yorke.ipynb" target="_blank" rel="noopener">View Notebook <span class="arrow" aria-hidden="true">&#x2197;</span></a>
           </div>
         </article>
-
         <article class="project-card reveal delay-1">
-          <a class="media" href="https://github.com/cyorke001/cyorke001/blob/main/Ideation-The%20Broken%20Contract.png" target="_blank" rel="noopener" aria-label="View The Broken Contract Ideation Board">
-            <img src="https://raw.githubusercontent.com/cyorke001/cyorke001/main/Ideation-The%20Broken%20Contract.png" alt="The Broken Contract Ideation Board" loading="lazy" />
+          <a class="media" href="https://durham-region-health-data.vercel.app/" target="_blank" rel="noopener" aria-label="Visit Durham Region Health Data, live project">
+            <img src="https://api.microlink.io/?url=https%3A%2F%2Fdurham-region-health-data.vercel.app%2F&screenshot=true&meta=false&embed=screenshot.url&viewport.width=1280&viewport.height=720" alt="Durham Region Health Data dashboard screenshot" loading="lazy" onerror="this.onerror=null;this.src='https://image.thum.io/get/width/1280/crop/720/https://durham-region-health-data.vercel.app/';" />
+            <span class="live-chip">Live Project</span>
           </a>
           <div class="card-body">
-            <span class="card-tag">Ideation, Policy, Urban Planning</span>
-            <h3 class="card-title">The Broken Contract — Ideation Board</h3>
-            <p class="card-desc">A Miro-based ideation map exploring the research, themes, characters, and visual strategy behind The Broken Contract — a data-driven analysis of housing affordability across the Greater Toronto Area.</p>
-            <a class="card-cta" href="https://github.com/cyorke001/cyorke001/blob/main/Ideation-The%20Broken%20Contract.png" target="_blank" rel="noopener">View Board <span class="arrow" aria-hidden="true">↗</span></a>
+            <span class="card-tag">Data Dashboard, Public Health</span>
+            <h3 class="card-title">Durham Region Health Data</h3>
+            <p class="card-desc">An interactive dashboard visualising public health indicators across Durham Region, Ontario — turning complex health datasets into clear, accessible insights.</p>
+            <a class="card-cta" href="https://durham-region-health-data.vercel.app/" target="_blank" rel="noopener"><span class="live-project">Live</span> · Visit Live Site <span class="arrow" aria-hidden="true">&#x2197;</span></a>
           </div>
         </article>
-
       </div>
     </div>
   </section>
-
 </main>
-
 <section id="contact" class="contact" aria-labelledby="contact-heading">
   <div class="container">
     <div class="contact-box reveal">
@@ -1830,14 +1717,13 @@
           </p>
           <div class="contact-actions reveal delay-2">
             <button type="button" class="btn btn-primary" id="scrollToForm" aria-label="Let's Work Together, open contact form">
-              Let's Work Together <span class="arrow" aria-hidden="true">→</span>
+              Let's Work Together <span class="arrow" aria-hidden="true">&#x2192;</span>
             </button>
-            <a href="https://www.linkedin.com/" target="_blank" rel="noopener" class="contact-link">LinkedIn <span aria-hidden="true">↗</span></a>
-            <a href="https://github.com/cyorke001" target="_blank" rel="noopener" class="contact-link">GitHub <span aria-hidden="true">↗</span></a>
-            <a href="mailto:clementkwesi.yorke@gmail.com" class="contact-link">Email <span aria-hidden="true">↗</span></a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener" class="contact-link">LinkedIn <span aria-hidden="true">&#x2197;</span></a>
+            <a href="https://github.com/cyorke001" target="_blank" rel="noopener" class="contact-link">GitHub <span aria-hidden="true">&#x2197;</span></a>
+            <a href="mailto:clementkwesi.yorke@gmail.com" class="contact-link">Email <span aria-hidden="true">&#x2197;</span></a>
           </div>
         </div>
-
         <form class="contact-form reveal delay-3" id="contactForm" novalidate>
         <div class="form-row">
           <div>
@@ -1858,7 +1744,7 @@
           <textarea id="cf-message" name="message" placeholder="A few lines on the role, team, or idea." required></textarea>
         </div>
           <button type="submit" class="form-submit" id="cfSubmit">
-            Send Message <span class="arrow" aria-hidden="true">→</span>
+            Send Message <span class="arrow" aria-hidden="true">&#x2192;</span>
           </button>
           <div class="form-status" id="cfStatus" aria-live="polite"></div>
         </form>
@@ -1866,24 +1752,20 @@
     </div>
   </div>
 </section>
-
 <footer class="footer" role="contentinfo">
   <div class="container footer-inner">
-    <span class="footer-left">Clement Yorke © <span id="yr"></span></span>
+    <span class="footer-left">Clement Yorke &copy; <span id="yr"></span></span>
     <span class="footer-center">Built on rigour.</span>
     <span class="footer-right">Based in Oshawa, ON</span>
   </div>
 </footer>
-
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script>
   document.getElementById('yr').textContent = new Date().getFullYear();
-
   const nav = document.getElementById('nav');
   const onScroll = () => { nav.classList.toggle('scrolled', window.scrollY > 12); };
   onScroll();
   window.addEventListener('scroll', onScroll, { passive: true });
-
   const hamburger = document.getElementById('hamburger');
   const mobileMenu = document.getElementById('mobileMenu');
   const toggleMenu = (force) => {
@@ -1897,7 +1779,6 @@
   hamburger.addEventListener('click', () => toggleMenu());
   document.getElementById('mobileClose').addEventListener('click', () => toggleMenu(false));
   mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => toggleMenu(false)));
-
   const sections = ['about','experience','education','skills','portfolio','contact']
     .map(id => document.getElementById(id)).filter(Boolean);
   const navLinks = Array.from(document.querySelectorAll('.nav-links a[data-nav]'));
@@ -1910,7 +1791,6 @@
     });
   }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
   sections.forEach(s => spy.observe(s));
-
   const reveals = document.querySelectorAll('.reveal');
   const revealer = new IntersectionObserver((entries) => {
     entries.forEach(e => {
@@ -1918,8 +1798,6 @@
     });
   }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
   reveals.forEach(el => revealer.observe(el));
-
-  // Experience collapsibles
   document.querySelectorAll('[data-role-toggle]').forEach(btn => {
     btn.addEventListener('click', () => {
       const expanded = btn.getAttribute('aria-expanded') === 'true';
@@ -1930,10 +1808,6 @@
       if (target) target.classList.toggle('open', next);
     });
   });
-
-  // YouTube lite-embed — swaps thumbnail for an iframe on first interaction
-  // Uses youtube-nocookie.com for broader origin support (incl. file:// previews),
-  // and keeps the card CTA ("Watch Video →") as a hard fallback that always works.
   document.querySelectorAll('.media[data-video]').forEach(el => {
     const load = (e) => {
       if (e) e.preventDefault();
@@ -1964,8 +1838,6 @@
       if (e.key === 'Enter' || e.key === ' ') load(e);
     });
   });
-
-  // "Let's Work Together" scrolls to the form and focuses the name input
   const scrollBtn = document.getElementById('scrollToForm');
   const cfName = document.getElementById('cf-name');
   if (scrollBtn && cfName) {
@@ -1974,41 +1846,31 @@
       setTimeout(() => cfName.focus({ preventScroll: true }), 450);
     });
   }
-
-  // EmailJS contact form submit — no page reload
-  // Replace the three placeholders with your real EmailJS IDs when deploying.
   const EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY';
   const EMAILJS_SERVICE_ID = 'YOUR_SERVICE_ID';
   const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';
-
   if (window.emailjs && typeof emailjs.init === 'function') {
     try { emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY }); } catch (_) {}
   }
-
   const form = document.getElementById('contactForm');
   const statusEl = document.getElementById('cfStatus');
   const submitBtn = document.getElementById('cfSubmit');
-
   if (form) {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       statusEl.className = 'form-status';
       statusEl.textContent = '';
-
       const name = form['from_name'].value.trim();
       const email = form['reply_to'].value.trim();
       const message = form['message'].value.trim();
-
       if (!name || !email || !message) {
         statusEl.className = 'form-status error';
         statusEl.textContent = 'Please complete the required fields.';
         return;
       }
-
       submitBtn.disabled = true;
       const originalLabel = submitBtn.innerHTML;
-      submitBtn.innerHTML = 'Sending…';
-
+      submitBtn.innerHTML = 'Sending\u2026';
       const finish = (ok, msg) => {
         submitBtn.disabled = false;
         submitBtn.innerHTML = originalLabel;
@@ -2016,18 +1878,15 @@
         statusEl.textContent = msg;
         if (ok) form.reset();
       };
-
       const placeholdersSet =
         EMAILJS_PUBLIC_KEY !== 'YOUR_PUBLIC_KEY' &&
         EMAILJS_SERVICE_ID !== 'YOUR_SERVICE_ID' &&
         EMAILJS_TEMPLATE_ID !== 'YOUR_TEMPLATE_ID';
-
       if (window.emailjs && placeholdersSet) {
         emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form)
           .then(() => finish(true, 'Thank you. Your message has been sent.'))
           .catch(() => finish(false, 'Something went wrong. Please email directly.'));
       } else {
-        // Graceful fallback until EmailJS credentials are configured
         setTimeout(() => {
           finish(true, 'Thank you. Your message has been sent.');
         }, 600);
